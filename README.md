@@ -1,6 +1,6 @@
 # AlleleProfileR_docker
 
-AlleleProfileR can be run from a docker container, and can be downloaded from the Docker hub repository (abruyneel/alleleprofiler). The container is based on the rocker/verse image and deploys RStudio to use R, and also contains some of the external tools that can be used to process sequencing data, such as samtools (http://www.htslib.org) and bwa (http://bio-bwa.sourceforge.net/bwa.shtml). In addition, an example script and demo data is included. This repository contains the Dockerfile.
+AlleleProfileR can be run from a docker container, and can be downloaded from the Docker hub repository (abruyneel/alleleprofiler). The container is based on the rocker/verse image and deploys RStudio to use R, and also contains some of the external tools that can be used to process sequencing data, such as samtools (http://www.htslib.org) and bwa (http://bio-bwa.sourceforge.net/bwa.shtml). In addition, an example script and demo data is included. This repository contains the Dockerfile. The source code of AlleleProfileR could be found at https://github.com/abruyneel/AlleleProfileR.
 
 To start the docker container: 
 ```
@@ -16,9 +16,9 @@ docker run --rm -e PASSWORD=crispr -p 8787:8787 -v ~/data:/home/rstudio/data abr
 
 ## Version history
 
-v1.3: 06/03/2020, updated R version (rocker/verse:latest)
+v1.3: 06/03/2020, updated R version (R 4.0.0)
 
-v1.2: 11/02/2019, version of at the time of the publication
+v1.2: 11/02/2019, version of at the time of the publication (R 3.6.1)
 
 ## Reference
 
